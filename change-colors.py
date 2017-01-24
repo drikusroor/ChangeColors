@@ -19,15 +19,8 @@ def change_colors(source_file_name, amount_pictures):
         rand_r = random.randint(-100, 100)
         rand_g = random.randint(-100, 100)
         rand_b = random.randint(-100, 100)
-
-        # rgb_new = change_color_skin(rgb_values, unique_rgb_values, -100, 50, 50, 'RGB')
         rgb_new = change_color_skin(rgb_values, unique_rgb_values, rand_r, rand_g, rand_b, 'RGB')
-
-        print (rand_r, rand_g, rand_b)
-
         random_word = str(uuid.uuid1())
-
         make_image(rgb_new, random_word)
 
-
-change_colors('FeetAnim1-sheet.png', 10)
+# change_colors('FeetAnim1-sheet.png', 10)
